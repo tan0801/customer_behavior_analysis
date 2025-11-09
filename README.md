@@ -17,8 +17,6 @@ Missing Values: 37 in Review Rating
 
 🧰 Tools & Technologies
 
-🧰 Tools and Technologies
-
 Python: Data loading, cleaning, and exploratory data analysis (EDA)
 
 MySQL: Running business queries and structured data analysis
@@ -28,6 +26,7 @@ Power BI: Creating interactive dashboards and visual reports
 Gamma App: Designing the final project presentation
 
 Libraries Used: pandas, numpy, matplotlib, seaborn, sqlalchemy
+
 ⚙️ Steps
 
 Load Data: Imported dataset using pandas.
