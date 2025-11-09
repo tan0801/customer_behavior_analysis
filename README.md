@@ -3,91 +3,72 @@ This project analyzes customer shopping data from 3,900 transactions across mult
 
 📘 Overview
 
-This project explores customer shopping behaviour using transactional data from 3,900 purchases across different product categories.
-The goal is to understand spending habits, customer segments, product preferences, and subscription patterns.
-By combining Python, SQL, and Power BI, this analysis provides data-driven insights to help improve marketing, retention, and sales strategies.
+This project analyzes customer shopping behaviour using data from 3,900 purchases across different product categories. It aims to identify spending patterns, customer segments, product preferences, and subscription trends to support data-driven business decisions.
 
 📊 Dataset
 
-Total Records: 3,900
-Columns: 18
-Key Features:
-Customer Demographics: Age, Gender, Location, Subscription Status
-Purchase Details: Item Purchased, Category, Purchase Amount, Season, Size, Colour
-Shopping Behaviour: Discount Applied, Previous Purchases, Frequency of Purchases, Review Rating, Shipping Type
-Missing Data: 37 missing values in the Review Rating column
+Records: 3,900
+
+Features: 18
+
+Includes: Demographics, purchase details, and shopping behaviour
+
+Missing Values: 37 in Review Rating
+
+🧰 Tools & Technologies
 
 🧰 Tools and Technologies
 
 Python: Data loading, cleaning, and exploratory data analysis (EDA)
+
 MySQL: Running business queries and structured data analysis
+
 Power BI: Creating interactive dashboards and visual reports
+
 Gamma App: Designing the final project presentation
+
 Libraries Used: pandas, numpy, matplotlib, seaborn, sqlalchemy
+⚙️ Steps
 
-🧩 Steps Followed
-1. Data Loading
-Imported the dataset into Python using pandas.
-Checked the structure using df.info() and viewed summary statistics with df.describe().
+Load Data: Imported dataset using pandas.
 
-2. Data Cleaning
-Handled missing values by imputing median ratings by category.
-Standardized column names to snake_case for consistency.
-Removed redundant columns such as duplicate promo code fields.
+Clean Data: Fixed missing values, renamed columns, and removed redundancies.
 
-3. Exploratory Data Analysis (EDA)
-Analysed spending patterns across gender, age group, and location.
-Explored relationships between discounts, product categories, and ratings.
-Created new features like age_group and purchase_frequency_days.
+EDA: Explored spending trends, demographics, and discount patterns.
 
-4. SQL Analysis
+SQL Queries: Analyzed revenue by gender, top products, and subscription behaviour.
 
-Loaded the cleaned dataset into a MySQL database.
-Wrote queries to answer business questions, such as:
-Revenue by gender and age group
-High-spending discount users
-Top-rated and most-purchased products
-Subscription impact on total revenue
-Comparison of express vs. standard shipping
+Dashboard: Built interactive Power BI dashboard for visualization.
 
-5. Dashboard Creation (Power BI)
-Built an interactive dashboard to visualize key insights.
-Included visuals for revenue trends, customer segmentation, and top product categories.
+Report & Presentation: Compiled insights and created a Gamma presentation.
 
-6. Reporting and Presentation
+📈 Key Insights
 
-Compiled findings into a detailed written report.
-Designed a professional presentation using Gamma to summarize key insights and recommendations.
+Subscribers spend more and shop more frequently.
 
-📈 Dashboard and Results
+Female customers generated slightly higher revenue.
 
-Key Insights:
+Discounts attract buyers but don’t always lower spending.
 
-Female customers contributed slightly higher revenue overall.
-Subscribers showed greater purchase frequency and total spend.
-Discount usage did not always correlate with lower spending — some high-value customers still used discounts.
-Top-rated products were also among the best-selling ones.
-Express shipping customers tend to have higher purchase amounts.
+Express shipping correlates with higher purchase amounts.
 
-💡 Business Recommendations
+💡 Recommendations
 
-Increase Subscriptions: Offer personalized perks for members.
-Enhance Loyalty Programs: Reward frequent customers to encourage repeat purchases.
-Optimize Discount Strategies: Balance discount offers with profit margins.
-Promote Bestsellers: Feature top-rated and high-selling products in campaigns.
-Targeted Marketing: Focus efforts on high-revenue customer segments and locations.
+Encourage subscriptions with exclusive offers.
 
-📦 Folder Structure
-Customer_Shopping_Behaviour_Analysis
-│
-├── data/                  # Raw and cleaned datasets  
-├── notebooks/             # Python scripts and Jupyter notebooks  
-├── sql_queries/           # SQL scripts for analysis  
-├── dashboard/             # Power BI dashboard files  
-├── report/                # Final report and Gamma presentation  
-└── README.md              # Project documentation  
+Strengthen loyalty programs for repeat buyers.
 
-🧠 Conclusion
+Optimize discount policies for better margins.
 
-This project combines data analysis, SQL querying, and visualization to provide meaningful insights into customer shopping behaviour.
-The approach demonstrates how structured data exploration and visualization can guide better business decisions.
+Highlight bestsellers in campaigns.
+
+Target high-revenue customer segments.
+
+📦 Structure
+Customer_Shopping_Behaviour_Analysis/
+├── data/
+├── notebooks/
+├── sql_queries/
+├── dashboard/
+├── report/
+└── README.md
